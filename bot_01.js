@@ -10,6 +10,8 @@ bot.use(async(ctx, next) => {
     console.log(`${dataEHora}\n Tempo de resposta: ${ms}ms`)
 })
 
+
+// evento de recepção de texto 
 bot.on('text', ctx => ctx.reply('Alo Mundo SENAI'))
 
 bot.launch()
