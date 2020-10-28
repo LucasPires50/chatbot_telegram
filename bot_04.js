@@ -41,6 +41,10 @@ bot.on('photo', ctx => {
     photo.forEach((ft, i) => {
         ctx.reply(`Foto ${i} tem rosolução de ${ft.width}x${ft.height}`)
     });
+//arrumar
+    for([i, ft] of photo.entries()){
+        await ctx.reply(`Foto ${i} tem`)
+    }
 })
 
 // evento de figurinhas
